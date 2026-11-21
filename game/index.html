@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lamplight — The Quiet Gallery</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #10131c; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+    color: #f2ead8;
+  }
+  #game {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    background: #10131c;
+    image-rendering: auto;
+  }
+  #status {
+    max-width: 1280px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #b8ad93;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800" aria-label="Lamplight, a top-down stealth game"></canvas>
+<p id="status" aria-live="polite">Loading Lamplight…</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
